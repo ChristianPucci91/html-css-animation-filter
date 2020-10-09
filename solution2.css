@@ -117,3 +117,36 @@
   85% { transform:rotate(300deg); }
   100% { transform:rotate(0deg); }
 }
+
+/* Esercizio 12 /// BONUS //// */
+
+.ex-12-button:hover > .ex-12-top-white {
+  animation: slidingtop 2s linear;
+}
+
+@keyframes slidingtop {
+  0% { left:10%; }
+  50% { left: calc(100% - 60px); } /* 100% width button minus top-white width */
+  100% {left:10%; }
+}
+
+.ex-12-button:hover > .ex-12-bottom-white {
+  animation: slidingbottom 2s linear;
+}
+
+@keyframes slidingbottom {
+  0% { right:20%; }
+  50% { right: calc(100% - 60px); } /* 100% width button minus bottom-white width */
+  100% {right:20%; }
+}
+
+/* Esercizio 13 /// BONUS /// */
+
+.ex-13-button:hover > .ex-13-top-white {
+  animation: slidingtop360 2s linear;
+}
+
+@keyframes slidingtop360 {
+  0% { left: 10% top: -10px; }
+  20% {left:100% -10px }
+}
