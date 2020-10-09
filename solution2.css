@@ -44,12 +44,12 @@
   transition: 1s;
 }
 
-.ex-5-square:active {
-  transform: scale(0.5);
-}
-
 .ex-5-square:hover {
   transform: scale(2);
+}
+
+.ex-5-square:active {
+  transform: scale(0.5);
 }
 
 /* Esercizio 6 */
@@ -104,4 +104,16 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+/* Esercizio 11 */
+
+.ex-11-icon:hover {
+  animation: rotationstop 2s linear;
+}
+
+@keyframes rotationstop {
+  0% { transform:rotate(0deg); }
+  85% { transform:rotate(300deg); }
+  100% { transform:rotate(0deg); }
 }
